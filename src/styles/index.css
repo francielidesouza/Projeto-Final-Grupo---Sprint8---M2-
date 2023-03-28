@@ -1,0 +1,390 @@
+body {
+    background-color: var(--white-1);
+}
+
+.header__container {
+    height: 80px;
+    width: 100%;
+    border-bottom: 1px solid var(--grey-2);
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white-1);
+
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.header__container.open{
+    height: 120px;
+}
+
+.main__container {
+    margin-top: 80px;
+    z-index: 0;
+  
+    height: 100%;
+    width: 100%;
+}
+
+.header__container--logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+}
+
+#navBtns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    min-width: 300px;
+    overflow-y: scroll;
+    margin: 0 auto;
+    margin-top: 120px;
+    padding-bottom:25px ;
+}
+
+#navBtns > button{
+    border-radius: var(--radius-16);
+    padding: var(--padding-button-1);
+    font-family: var(--font-family);
+    font-size: var(--text-16);
+    font-weight: var(--font-600);
+    line-height: var(--line-height-4);
+    background-color: var(--bg-button-1);
+    border: var(--border-button-purple);
+    color: var(--brand);
+}
+
+
+.header__container--btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    gap: 16px;
+}
+
+.header__logo{
+    font-family: var(--font-family);
+    font-weight: var(--font-700);
+    font-size: var(--title-28);
+    color: var(--brand);
+}
+.container__btns--hidden{
+    display: none;
+}
+
+.section-list__container {
+
+    margin: 0 auto;
+    width: 95%;
+    max-width: 800px;
+    height: 650px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar{
+
+    background-color: var(--white-1);
+    width: 5px;
+    
+}
+
+::-webkit-scrollbar-thumb{
+
+    background-color: var(--brand);
+
+}
+.ul-pets__list, .ul-pets__list2 {
+
+    margin-top: 4rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.li-card__pets {
+    width: 90%;
+    max-width: 200px;
+    height: 270px;
+    background: --white-1;
+    box-shadow: 0px 0px 5px rgba(78, 32, 150, 0.25);
+    border-radius: 4px;
+
+}
+
+.div-img__pets {
+
+    width: 100%;
+    max-width: 200px;
+    height: 50%;
+    max-height: 136px;
+    overflow: hidden;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.img-card {
+
+    width: 100%;
+    height: fit-content;
+    transition: .5s;
+    
+}
+
+.img-card:hover {
+
+    transform: scale(1.2);
+    
+    
+}
+
+.div-info__card {
+
+    padding: 16px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.div-info__card h2 {
+
+    font-size: var(--title-24);
+    font-weight: var(--font-600);
+    color: var(--brand);
+}
+
+.div-info__card p {
+
+    font-size: var(--text-12);
+    font-weight: var(--font-600);
+    color: var(--grey-2);
+}
+
+
+.btn {
+    border-radius: var(--radius-16);
+    padding: var(--padding-button-1);
+
+    font-family: var(--font-family);
+    font-size: var(--text-16);
+    font-weight: var(--font-600);
+    line-height: var(--line-height-4);
+}
+
+
+.btn--green {
+    background-color: var(--bg-button-3);
+    border: var(--border-button-green);
+    color: var(--white-1);
+    margin-top: 10px;
+    transition: .5s;
+}
+
+.btn--green:hover {
+    background-color: var(--white-1);
+    border: var(--border-button-green);
+    color: var(--black-1);    
+}
+
+.btn--white {
+    background-color: var(--bg-button-1);
+    border: var(--border-button-purple);
+    color: var(--brand);
+}
+
+.btn--purple {
+    background-color: var(--bg-button-2);
+    border: var(--border-button-purple);
+    color: var(--white-1);
+}
+
+
+
+/* MODAIS REGISTER E LOGIN */
+
+.modal__container {
+    border: none;
+    border-radius: var(--radius-16);
+    width: 300px;
+    height: 400px;
+
+    position: fixed;
+    top: 180px;
+    left: 18px;
+}
+
+.modal__form--header {
+    height: 42px;
+    background-color: var(--brand);
+    border-radius: 16px 16px 0px 0px;
+}
+
+.modal__btn--close,
+.modal__btn--closeLogin {
+    margin: 8px 0px 0 240px;
+    margin-right: 15px;
+}
+
+
+.modal__form--main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.modal__title {
+    font-size: var(--title-24);
+    color: var(--brand);
+    font-family: var(--font-family);
+    font-weight: var(--font-700);
+    margin-top: 30px;
+}
+
+.modal__title--login {
+    margin-top: 71px;
+}
+
+.modal__container--inputs {
+    width: 85%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.modal__inputs {
+    height: 27px;
+    border-radius: var(--radius-16);
+    border: var(--border-input);
+    padding: 15px;
+}
+
+.modal__inputs::placeholder {
+    color: var(--purple-1);
+    font-family: var(--font-family);
+    font-weight: var(--font-400);
+    font-size: var(--text-10);
+    line-height: var(--line-height-2);
+}
+
+.btn__size {
+    margin-top: 10px;
+    height: 27px;
+    border-radius: var(--radius-16);
+}
+
+.modal__description {
+    color: var(--black-1);
+    font-family: var(--font-family);
+    font-weight: var(--font-400);
+    font-size: var(--text-8);
+    line-height: var(--line-height-1);
+    margin-bottom: 25px;
+}
+
+.modal__link {
+    color: var(--brand);
+    font-weight: var(--font-700);
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+.modal__form--footer {
+    height: 12px;
+    background-color: var(--brand);
+    border-radius: 0 0 16px 16px;
+}
+
+.modal__footer--login {
+    margin-top: 55px;
+}
+
+.footer__container {
+    width: 100%;
+    height: 10vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--purple-1);
+}
+.footer__description {
+    color: var(--brand);
+    font-family: var(--font-family);
+    font-size: var(--text-12);
+    font-weight: var(--font-400);
+    line-height: 16.34px;
+}
+
+
+@media (min-width: 500px) {
+    .header__img--menuBtn, .header__img--closeMenuBtn{
+        display: none;
+    }
+
+    .ul-pets__list, .ul-pets__list2 {
+
+        margin-top: 5rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 4rem;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .container__btns--hidden {
+        display: none;
+
+        font-family: var(--font-family);
+        font-size: var(--text-16);
+        font-weight: var(--font-600);
+        line-height: var(--line-height-4);
+    }
+}
+
+/* HOME */
+@media (min-width: 700px) {
+
+    .header__container {
+        height: 80px;
+        justify-content: space-around;
+        flex-direction: row;
+        padding: 0px;
+    }
+
+    .header__container--logo {
+        width: 175px;
+    }
+
+    .header__container--btns {
+        width: 22%;
+        display: flex;
+    }
+
+    .btn__register,
+    .btn__login {
+        cursor: pointer;
+    }
+
+    .header__img--menuBtn, .header__img--closeMenuBtn {
+        display: none;
+    }
+
+    .modal__container {
+        margin: 40px auto;
+        position: relative;
+    }
+}

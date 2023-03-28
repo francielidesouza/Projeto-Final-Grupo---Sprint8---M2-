@@ -1,0 +1,693 @@
+.header__container {
+    height: 80px;
+    width: 100%;
+    border-bottom: 1px solid var(--grey-2);
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white-1);
+
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.header__container.open{
+    height: 120px;
+}
+
+.header__container--logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+}
+
+.header__container--btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    gap: 16px;
+}
+
+.header__logo {
+    font-family: var(--font-family);
+    font-weight: var(--font-700);
+    font-size: var(--title-28);
+    color: var(--brand);
+}
+
+.container__btns--hidden {
+    display: none;
+}
+
+
+.btn {
+    border-radius: var(--radius-16);
+    padding: var(--padding-button-1);
+
+    font-family: var(--font-family);
+    font-size: var(--text-16);
+    font-weight: var(--font-600);
+    line-height: var(--line-height-4);
+}
+
+.btn--white {
+    background-color: var(--bg-button-1);
+    border: var(--border-button-purple);
+    color: var(--brand);
+}
+
+.btn--purple {
+    background-color: var(--bg-button-2);
+    border: var(--border-button-purple);
+    color: var(--white-1);
+}
+
+
+main {
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 120px;
+    z-index: 0;
+}
+
+.div_perfil--background {
+    background-color: var(--brand);
+    width: 100vw;
+    height: 223px;
+    margin-bottom: 220px;
+}
+
+.img_perfil--photo {
+    border-radius: 50%;
+    position: absolute;
+    top: 105px;
+    border: 5px solid white;
+
+    max-width: 320px;
+    min-width: 320px;
+    max-height: 320px;
+    min-height: 320px;
+    object-fit: cover;
+}
+
+.div_perfil--information {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    height: 254px;
+    border: 1px solid rgba(128, 128, 128, 0.300);
+    box-shadow: 0px 0px 5px #4E209640;
+    padding: 24px;
+    gap: 10px;
+    border-radius: var(--radius-4);
+    margin-bottom: 50px;
+
+
+}
+
+.div_perfil--information>h2 {
+    font-size: 1.5rem;
+    color: var(--brand);
+    text-align: center;
+    justify-self: center;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    font-weight: 700;
+}
+
+.div_perfil--information>p {
+    font-weight: 600;
+}
+
+.div_perfil--information>p>span {
+    color: var(--bg-button-2);
+}
+
+.div_perfil--information>div {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.btn_infoPerfil_atualizar {
+    border: 1px solid var(--brand);
+    background-color: var(--bg-button-2);
+    color: var(--white-1);
+    padding: var(--padding-button-2);
+    border-radius: var(--radius-16);
+    cursor: pointer;
+}
+
+.btn_infoPerfil_deletar {
+    border: 1px solid var(--red-1);
+    background-color: var(--bg-button-1);
+    color: var(--red-1);
+    padding: var(--padding-button-2);
+    border-radius: var(--radius-16);
+    cursor: pointer;
+}
+
+.container__petList {
+    display: flex;
+    display: flex;
+    width: 80vw;
+    flex-direction: column;
+}
+
+.btn__registerPet {
+    width: 162px;
+    height: 27px;
+    border-radius: var(--radius-16);
+    font-family: var(--font-family);
+    font-size: var(--text-14);
+    color: var(--bg-button-1);
+    background-color: var(--bg-button-3);
+    border: none;
+    cursor: pointer;
+    font-weight: var(--font-600);
+}
+
+.container__petList>ul {
+    margin-top: 42px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 42px;
+}
+
+.container__petList>ul>li {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 203px;
+    border: 2px solid var(--grey-1);
+    border-radius: var(--radius-4);
+}
+
+.container__petList>ul>li>img {
+    width: 200px;
+    height: 200px;
+    border-radius: var(-radius-4);
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.container__petList>ul>li>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 40px;
+}
+
+.li__infoPet {
+    color: var(--brand);
+    font-size: var(--text-14);
+    font-family: var(--font-family);
+    font-weight: var(--font-600);
+    margin-left: 36px;
+    line-height: var(--line-height-6);
+}
+
+.li__infoPet--result {
+    color: var(--black-1);
+    font-weight: var(--font-400);
+}
+
+.btn__atualizarPet {
+    margin-left: 36px;
+    margin-top: 16px;
+    width: 93px;
+    height: 27px;
+    background-color: var(--bg-button-2);
+    border-radius: var(--radius-16);
+    color: var(--white-1);
+    font-weight: var(--font-600);
+    border: none;
+    font-family: var(--font-family);
+    cursor: pointer;
+}
+.btn__deletarPet{
+    margin-left: 36px;
+    margin-top: 16px;
+    width: 93px;
+    height: 27px;
+    background-color: var(--red-1);
+    border-radius: var(--radius-16);
+    color: var(--white-1);
+    font-weight: var(--font-600);
+    border: none;
+    font-family: var(--font-family);
+    cursor: pointer;
+}
+
+
+.modal__patchProfile {
+    margin: 80px auto;
+    border: none;
+    border-radius: var(--radius-16);
+}
+
+.modal__deleteProfile {
+    margin: 80px auto;
+    border: none;
+    border-radius: var(--radius-16);
+}
+
+ .modal__registerPet, .modal__atualizaPet {
+    margin: 140px auto;
+
+    border: none;
+    border-radius: var(--radius-16);
+
+} 
+
+.modal__conteiner {
+    width: 80vw;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal__conteiner>div {
+    width: 100%;
+    background-color: var(--brand);
+    height: 42px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+
+}
+
+.modal__conteiner>div>img {
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.modal__conteiner>h2 {
+    margin: 0 auto;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    font-size: var(-title-24);
+    color: var(--brand);
+    font-weight: var(--font-600);
+}
+
+.modal__conteiner>form {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 12px;
+} 
+
+
+.modal__conteiner > form > input{
+    width: 200px;
+    height: 27px;
+    border-radius: var(--radius-16);
+    padding-left: 15px;
+    margin-bottom: 15px;
+}
+.modal__conteiner > form>select {
+    width: 240px;
+    border:1px solid var(--grey-2);
+    color: var(--grey-2);
+    
+}
+.modal__conteiner > form > select{
+    width: 200px;
+
+    height: 27px;
+    border-radius: var(--radius-16);
+    padding-left: 15px;
+    margin-bottom: 15px;
+    border: 1px solid var(--grey-2);
+    color: var(--grey-2);
+}
+
+
+.modal__conteiner > form > button{
+    width: 200px;
+
+    height: 27px;
+    border-radius: var(--radius-16);
+    background-color: var(--brand);
+    color: var(--white-1);
+    font-size: var(--text-14);
+    font-weight: var(--font-600);
+    border: none;
+    cursor: pointer;
+}
+
+.modal__footer{
+    background-color: var(--brand);
+    color: var(--brand);
+}
+
+.modal__conteiner>h2 {
+    font-size: 1.5rem;
+}
+
+.modal_deleteBtn_close {
+    width: 240px;
+    height: 27px;
+    border-radius: var(--radius-16);
+    background-color: var(--brand);
+    color: var(--white-1);
+    font-size: var(--text-14);
+    font-weight: var(--font-600);
+    border: none;
+    margin-top: 20px;
+    align-self: center;
+    cursor: pointer;
+}
+
+.modal_deleteBtn_delete {
+    margin-top: 10px;
+    width: 240px;
+    height: 27px;
+    border: 1px solid var(--red-1);
+    background-color: var(--bg-button-1);
+    color: var(--red-1);
+    padding: var(--padding-button-2);
+    border-radius: var(--radius-16);
+    align-self: center;
+    cursor: pointer;
+}
+
+
+.footer__container {
+    width: 100%;
+    height: 10vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--purple-1);
+}
+
+.footer__description {
+    color: var(--brand);
+    font-family: var(--font-family);
+    font-size: var(--text-12);
+    font-weight: var(--font-400);
+    line-height: 16.34px;
+}
+
+@media(min-width: 700px) {
+
+    .header__container {
+        height: 80px;
+        justify-content: space-around;
+        flex-direction: row;
+        padding: 0px;
+    }
+
+    .header__container--logo {
+        width: 35%;
+    }
+
+    .header__container--btns {
+        width: 22%;
+        display: flex;
+    }
+
+    .btn__home,
+    .btn__logout {
+        cursor: pointer;
+    }
+
+    .header__img--menuBtn, .header__img--closeMenuBtn {
+        display: none;
+    }
+
+    main {
+        font-family: 'Open Sans', sans-serif;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .div_perfil--background {
+        background-color: var(--brand);
+        width: 100vw;
+        height: 223px;
+        margin-bottom: 200px;
+    }
+
+    .img_perfil--photo {
+        border-radius: 50%;
+        position: absolute;
+        top: 20px;
+        border: 5px solid white;
+
+    }
+
+    .div_perfil--information {
+        display: flex;
+        flex-direction: column;
+        width: 480px;
+        height: 254px;
+        border: 1px solid rgba(128, 128, 128, 0.300);
+        box-shadow: 0px 0px 5px #4E209640;
+        padding: 24px;
+        gap: 10px;
+        border-radius: var(--radius-4);
+        margin-bottom: 50px;
+
+
+    }
+
+    .div_perfil--information>h2 {
+        font-size: 1.5rem;
+        color: var(--brand);
+        text-align: center;
+        justify-self: center;
+        margin-bottom: 20px;
+        margin-top: 5px;
+        font-weight: 700;
+    }
+
+    .div_perfil--information>p {
+        font-weight: 600;
+    }
+
+    .div_perfil--information>p>span {
+        color: var(--bg-button-2);
+    }
+
+    .div_perfil--information>div {
+        margin-top: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .btn_infoPerfil_atualizar {
+        border: 1px solid var(--brand);
+        background-color: var(--bg-button-2);
+        color: var(--white-1);
+        padding: var(--padding-button-2);
+        border-radius: var(--radius-16);
+        cursor: pointer;
+    }
+
+    .btn_infoPerfil_deletar {
+        border: 1px solid var(--red-1);
+        background-color: var(--bg-button-1);
+        color: var(--red-1);
+        padding: var(--padding-button-2);
+        border-radius: var(--radius-16);
+        cursor: pointer;
+    }
+
+    .container__petList {
+        display: flex;
+        display: flex;
+        width: 80vw;
+        flex-direction: column;
+    }
+
+    .btn__registerPet {
+        width: 162px;
+        height: 27px;
+        border-radius: var(--radius-16);
+        font-family: var(--font-family);
+        font-size: var(--text-14);
+        color: var(--bg-button-1);
+        background-color: var(--bg-button-3);
+        border: none;
+        cursor: pointer;
+        font-weight: var(--font-600);
+    }
+
+    .container__petList>ul {
+        margin-top: 42px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+        margin-bottom: 42px;
+    }
+
+    .container__petList>ul>li {
+        display: flex;
+        flex-direction: row;
+        width: 480px;
+        height: 203px;
+        border: 2px solid var(--grey-1);
+        border-radius: var(--radius-4);
+    }
+
+    .container__petList>ul>li>img {
+        width: 200px;
+        height: 200px;
+        border-radius: var(-radius-4);
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+    .container__petList>ul>li>div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .li__infoPet {
+        color: var(--brand);
+        font-size: var(--text-14);
+        font-family: var(--font-family);
+        font-weight: var(--font-600);
+        margin-left: 36px;
+        line-height: var(--line-height-6);
+    }
+
+    .li__infoPet--result {
+        color: var(--black-1);
+        font-weight: var(--font-400);
+    }
+
+    .btn__atualizarPet {
+        margin-left: 36px;
+        margin-top: 16px;
+        width: 93px;
+        height: 27px;
+        background-color: var(--bg-button-2);
+        border-radius: var(--radius-16);
+        color: var(--white-1);
+        font-weight: var(--font-600);
+        border: none;
+        font-family: var(--font-family);
+        cursor: pointer;
+    }
+
+    .modal__registerPet,
+    .modal__atualizaPet {
+        margin: 140px auto;
+        border: none;
+        border-radius: var(--radius-16);
+    }
+
+    .modal__conteiner {
+        width: 520px;
+        height: 380px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .modal__conteiner>div {
+        width: 520px;
+        background-color: var(--brand);
+        height: 42px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .modal__conteiner>div>img {
+        margin-right: 15px;
+        cursor: pointer;
+    }
+
+    .modal__conteiner>h2 {
+        margin: 0 auto;
+        margin-top: 70px;
+        margin-bottom: 20px;
+        font-size: var(-title-24);
+        color: var(--brand);
+        font-weight: var(--font-600);
+    }
+
+    .modal__conteiner>form {
+        display: flex;
+        flex-direction: column;
+        width: 240px;
+        margin: 0 auto;
+        margin-bottom: 12px;
+    }
+
+    .modal__conteiner>form>input {
+        width: 240px;
+        height: 27px;
+        border-radius: var(--radius-16);
+        padding-left: 15px;
+        margin-bottom: 15px;
+        border: 1px solid var(--grey-2);
+        color: var(--grey-2);
+    }
+
+    .modal__conteiner>form>select {
+        width: 240px;
+        height: 27px;
+        border-radius: var(--radius-16);
+        padding-left: 15px;
+        margin-bottom: 15px;
+        border: 1px solid var(--grey-2);
+        color: var(--grey-2);
+    }
+
+    .modal__conteiner>form>button {
+        width: 240px;
+        height: 27px;
+        border-radius: var(--radius-16);
+        background-color: var(--brand);
+        color: var(--white-1);
+        font-size: var(--text-14);
+        font-weight: var(--font-600);
+        border: none;
+        cursor: pointer;
+    }
+
+    .modal__footer {
+        background-color: var(--brand);
+        color: var(--brand);
+    }
+    .btn__deletarPet{
+        margin-left: 36px;
+        margin-top: 16px;
+        width: 93px;
+        height: 27px;
+        background-color: var(  --red-1);
+        border-radius: var(--radius-16);
+        color: var(--white-1);
+        font-weight: var(--font-600);
+        border: none;
+        font-family: var(--font-family);
+        cursor: pointer; 
+    }
+}

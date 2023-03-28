@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/globalStyles.css">
+    <link rel="stylesheet" href="./src/styles/index.css">
+
+    <!-- JS -->
+    <script type="module" src="./src/scripts/index.js" defer></script>
+
+    <title>S8-01 🏆 Projeto em Equipe</title>
+</head>
+
+<body>
+    <header class="header__container">
+
+        <div class="header__container--logo">
+            <h1 class="header__logo">KenziePets</h1>
+            <img class="header__img--closeMenuBtn container__btns--hidden" src="./src/assets/close.svg" alt="close menu">
+            <img class="header__img--menuBtn" src="./src/assets/menuBtn.svg" alt="menu">
+        </div>
+        <nav class="header__container--btns container__btns--hidden">
+            <button class="btn btn--white btn__register">Register</button>
+            <button class="btn btn--purple btn__login">Login</button>
+        </nav>
+
+    </header>
+
+    <main class="main__container">
+
+        <nav id="navBtns">
+            <button id="allPetsBtn">Todos</button>
+            <button id="dogsBtn">Cachorros</button>
+            <button id="catsBtn">Gatos</button>
+            <button id="birdsBtn">Aves</button>
+            <button id="reptilesBtn">Repteis</button>
+        </nav>
+        
+        <section class="section-list__container">
+            <ul class="ul-pets__list">
+ 
+            </ul>
+        </section>
+
+        <!-- MODAL REGISTER -->
+        <dialog class="modal__container modal__register">
+
+
+            <form class="modal__form">
+                <div class="modal__form--header">
+                    <img class="modal__btn--close" src="./src/assets/btnClose.svg" alt="close">
+                </div>
+
+                <div class="modal__form--main">
+                    <h1 class="modal__title">Cadastrar</h1>
+
+                    <div class="modal__container--inputs">
+
+                        <label for="name"></label>
+                        <input class="modal__inputs modal__input--register" type="text" name="name" id="name"
+                            placeholder="Nome">
+
+                        <label for="email"></label>
+                        <input class="modal__inputs modal__input--register" type="email" name="email" id="email"
+                            placeholder="E-mail">
+
+                        <label for="password"></label>
+                        <input class="modal__inputs modal__input--register" type="password" name="password"
+                            id="passwordRegister" placeholder="Senha">
+
+                        <label for="avatar"></label>
+                        <input class="modal__inputs modal__input--register" type="url" name="avatar" id="avatar"
+                            placeholder="Avatar?">
+
+                        <button class="modal__btn__register btn__size btn--purple" id="btn__register"
+                            type="submit">Cadastrar</button>
+
+                        <p class="modal__description">Já tem cadastro?<span id="open__login" class="modal__link">Clique
+                                aqui</span>para logar.</p>
+                    </div>
+                </div>
+
+                <div class="modal__form--footer"></div>
+            </form>
+        </dialog>
+
+        <!-- MODAL LOGIN -->
+        <dialog class="modal__container modal__login">
+            <form class="modal__form">
+                <div class="modal__form--header">
+                    <img class="modal__btn--closeLogin" src="./src/assets/btnClose.svg" alt="close">
+                </div>
+
+                <div class="modal__form--main">
+                    <h1 class="modal__title modal__title--login">Login</h1>
+
+                    <div class="modal__container--inputs">
+
+                        <label for="email"></label>
+                        <input class="modal__inputs modal__input--login" type="email" name="email" id="emailUser"
+                            placeholder="E-mail">
+
+                        <label for="password"></label>
+                        <input class="modal__inputs modal__input--login" type="password" name="password" id="password"
+                            placeholder="Senha">
+
+                        <button class="modal__btn__login btn__size btn--purple" id="btn__enter"
+                            type="submit">Entrar</button>
+
+                        <p class="modal__description">Não tem cadastro?<span id="open__register"
+                                class="modal__link">Clique aqui </span> para se cadastrar.</p>
+                    </div>
+                </div>
+
+                <div class="modal__form--footer modal__footer--login"></div>
+            </form>
+        </dialog>
+    </main>
+
+    <footer class="footer__container">
+        <p class="footer__description">KenziePets | Todos os Direitos Reservados</p>
+    </footer>
+
+</body>
+
+</html>

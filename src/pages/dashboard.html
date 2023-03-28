@@ -1,0 +1,130 @@
+<!-- Bora codar grupo -->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- FONTS -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+       <!-- STYLES -->
+       <link rel="stylesheet" href="../styles/reset.css">
+       <link rel="stylesheet" href="../styles/globalStyles.css">
+       <link rel="stylesheet" href="../styles/dashboard.css">
+
+    <title>Kenzie Pets</title>
+   
+</head>
+
+<body>
+    <header class="header__container">
+        <div class="header__container--logo">
+            <h1 class="header__logo">KenziePets</h1>
+            <img class="header__img--closeMenuBtn container__btns--hidden" src="../assets/close.svg" alt="close menu">
+            <img class="header__img--menuBtn" src="../assets/menuBtn.svg" alt="menu">
+        </div>
+        <nav class="header__container--btns container__btns--hidden">
+            <!-- corrigir renderização para home logado -->
+            <a class="btn btn--white btn__home" href="../pages/homeLogado.html">Home</a>
+            <!-- está renderizando para home deslogado -->
+            <a class="btn btn--purple btn__logout--profile" href="../../index.html">Logout</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="div_perfil--background"></div>
+        <img class="img_perfil--photo" src="" alt="">
+        <div class="div_perfil--information">
+            <h2>Dados pessoais</h2>
+            <p class="perfil_nametxt"><span>Nome:</span></p>
+            <p class="perfil_emailtxt"><span>Email:</span></p>
+            <div>
+                <button class="btn_infoPerfil_atualizar">Atualizar informações</button>
+                <button class="btn_infoPerfil_deletar">Deletar conta</button>
+                <dialog class="modal__patchProfile">
+                    <div class="modal__conteiner">
+                        <div>
+                            <img src="../assets/ButtonFechar.png" alt="Botão Fechar" class="modal_closeBtn">
+                        </div>
+                        <h2>Atualizar Perfil</h2>
+                        <form>
+                            <input class="modal_nameinput--patch" type="text" id="userame" placeholder="Nome" required>
+                            <input class="modal_fotoinput--patch" type="text" id="foto" placeholder="Avatar" required>
+                            <button class="modal_patchBtn">Atualizar</button>
+                        </form>
+                    </div>
+                    <div class="modal__footer">.</div>
+                </dialog>
+                <dialog class="modal__deleteProfile">
+                    <div class="modal__conteiner">
+                        <div>
+                            <img src="../assets/ButtonFechar.png" alt="Botão Fechar" class="modal_closeBtnDel">
+                        </div>
+                        <h2>Deseja Deletar este usuário?</h2>
+                        <button class="modal_deleteBtn_close">Não desejo deletar minha conta</button>
+                        <button class="modal_deleteBtn_delete">Quero deletar minha conta</button>
+                    </div>
+                    <div class="modal__footer">.</div>
+                </dialog>
+            </div>
+        </div>
+
+        <div class="container__petList">
+            <button class="btn__registerPet">Cadastrar novo pet</button>
+            <ul class="ul__petList"> </ul>
+            <dialog class="modal__registerPet">
+                <div class="modal__conteiner">
+                    <div>
+                        <img id="fechar__modal--registerPet" src="../assets/ButtonFechar.png" alt="Botão Fechar">
+                    </div>
+                    <h2>Cadastrar pet</h2>
+                    <form>
+                        <input type="text" id="namePet" placeholder="Nome" required>
+                        <select id="especiePet" valeu="">
+                            <option value="">Selecione a espécie do pet</option>
+                            <option value="Cachorro">Cachorro</option>
+                            <option value="Gato">Gato</option>
+                            <option value="Aves">Aves</option>
+                            <option value="Repteis">Repteis</option>
+                        </select>
+                        <input type="url" id="fotoPetRegister" placeholder="Foto do pet (Link)" required>
+                        <button id="cadastrarPet">Cadastrar</button>
+                    </form>
+                </div>
+                <div class="modal__footer">.</div>
+            </dialog>
+            <dialog class="modal__atualizaPet">
+                <div class="modal__conteiner">
+                    <div>
+                        <img id="fechar__modal--atualizarPet" src="../assets/ButtonFechar.png" alt="Botão Fechar">
+                    </div>
+                    <h2>Atualizar pet</h2>
+                    <form>
+                        <input type="text" id="namePetAtualizar" placeholder="Nome" required>
+                        <select id="especiePetAtualizar" valeu="">
+                            <option value="">Selecione a espécie do pet</option>
+                            <option value="Cachorro">Cachorro</option>
+                            <option value="Gato">Gato</option>
+                            <option value="Aves">Aves</option>
+                            <option value="Repteis">Repteis</option>
+                        </select>
+                        <input type="url" id="fotoAtualizar" placeholder="Foto do pet (Link)" required>
+                        <button id="atualizarPet">Atualizar</button>
+                    </form>
+                </div>
+                <div class="modal__footer">.</div>
+            </dialog>
+        </div>
+    </main>
+    <footer class="footer__container">
+        <p class="footer__description">KenziePets | Todos os Direitos Reservados</p>
+    </footer>
+    <script type="module" src="../scripts/profilePets.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+:root {
+    /* -- COLORS -- */
+    --white-1: #FFFFFF;
+    --grey-1: #EEEEEE;
+    --grey-2: #90A4AE;
+    --black-1: #1B1C1E;
+    --green-1: #33CC66;
+    --purple-1: #B48CF2;
+    --purple-2: #F1EEF7;
+    --red-1: #EA534A;
+
+    /* BRAND */
+    --brand: #4E2096;
+
+    /* BOX SHAWDON CARDS*/
+    --color-box-shawdon: rgba(78, 32, 150, 0.25);
+
+    /* -- BUTTONS -- */
+    --bg-button-1: #FFFFFF;
+    --bg-button-2: #4E2096;
+    --bg-button-3: #33CC66;
+
+    /* BORDERS */
+    --border-input: 1px solid var(--purple-1);
+    --border-button-purple: 1px solid var(--brand);
+    --border-button-red: 1px solid var(--red-1);
+    
+    --padding-button-1: 4px 24px;
+    --padding-button-2: 4px 16px;
+
+    --radius-4: 4px;
+    --radius-16: 16px;
+
+
+    /* -- FONT'S -- */
+
+    --font-family: 'Open Sans', sans-serif;
+   
+
+    /* TITLE'S */
+    --title-28: 1.75rem; /* 28px */
+    --title-24: 1.5rem; /* 24px */
+
+    /* TEXT'S */
+    --text-8: 0.5rem; /* 8px */
+    --text-10: 0.625rem; /* 10px */
+    --text-12: 0.75rem; /* 12px */
+    --text-14: 0.875rem; /* 14x */
+    --text-16: 1rem; /* 16x */
+
+      /* FONTS LINE HEIGHT */
+    --line-height-1: 10.89px;
+    --line-height-2: 13.62px;
+    --line-height-3: 19.07px;
+    --line-height-4: 21.79px;
+    --line-height-5: 22px;
+    --line-height-6: 26.4px;
+
+      /* FONTS WEIGHT */
+      --font-400: 400;
+      --font-600: 600;
+      --font-700: 700;
+}
